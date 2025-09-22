@@ -625,8 +625,8 @@ span{
     flex-direction: column;
     justify-content: center;
     align-items:center ; */
-     height: 20vh;
-    border: 2px solid rgb(185, 196, 31);
+     height: 15vh;
+    
 }
 .contact-head h2{
       font-size:32px;
@@ -1027,3 +1027,4 @@ input::placeholder{
     }
 
  }  */
+
