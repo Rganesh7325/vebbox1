@@ -1,6 +1,7 @@
 *{
     padding: 0%;
     margin: 0%;
+    box-sizing: border-box;
 }
 /* .Mainheads {
     border: 2px solid violet;
@@ -391,7 +392,7 @@ button{
  .pd{
  
     background-image: url(./pd1);
-    background-size: cover;  
+    background-size: contain; 
     width: 35%;
     min-width: 120px;
     /* width: 520px; */
@@ -478,7 +479,7 @@ button{
     margin-top: 20px;
     flex-wrap: wrap;
      /* border: 2px solid rgb(255, 115, 0); */
-   
+    
 }
 .ab1{
     
@@ -520,6 +521,7 @@ button{
     padding-bottom: 90px;
      padding: 20px;
     width: 60vh;
+  
     
     /* border: 2px solid rgb(210, 224, 16); */
 }
@@ -659,7 +661,6 @@ span{
     width: 27%;
      flex-wrap: wrap;
       display: flex;
-
       flex-direction: column;
       gap: 10px;
 }
@@ -787,7 +788,7 @@ input::placeholder{
         width: 99%;
     }
     .cupd1,.cupd2{
-          width: 90%;
+          /* width: 90%; */
           height: auto;
            flex-direction: row;
            width: 100%;
@@ -829,7 +830,35 @@ input::placeholder{
         width: 90%;
     }
 }
-
+@media (max-width:688px){
+    .s1,.ser-body,.s1d,.ser-body2{
+            width: 95%;
+            height: auto;
+    }
+    /* .s1{
+        border: 2px solid red;
+        
+    } */
+    .s1 img{
+     width: 65px;
+    height: 65px;  
+    border: 14px solid #3498db;
+    border-radius: 50%;
+    margin-top: 20px;
+    margin-left: 20px;
+    }
+    .s1d h4{
+        box-sizing: border-box;
+        padding: 10px 0px;
+    }
+    .s1d p{
+                box-sizing: border-box;
+        /* border: 2px solid red; */
+        min-height: 20vh;
+        padding: 1px;
+        width: 73vw;
+    }
+}
  @media(max-width:1100px){
 
     .headnav ul{
@@ -856,7 +885,7 @@ input::placeholder{
         justify-content: center;
     }
     .c3{
-        justify-content: center;
+        /* justify-content: center; */
         width: 80%;
         height: 50vh;
     }
@@ -867,7 +896,8 @@ input::placeholder{
         flex-direction: column;
     }
     .c1,.c2{
-        width: 80%;
+        width: 100%;
+        border: 2px solid red;
     }
     .page1{
         /* border: 2px solid red; */
