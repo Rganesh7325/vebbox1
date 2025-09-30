@@ -3,7 +3,9 @@
     margin: 0%;
     box-sizing: border-box;
     /* ;oaj */
+ 
 }
+
 /* .Mainheads {
     border: 2px solid violet;
    box-sizing: border-box;
@@ -20,6 +22,7 @@
     height: 2px;
     display: inline-block;
     width: 30px;
+    
  }
 
 
@@ -51,22 +54,34 @@
     width: 14vw;
     /* border: 2px solid red; */
 }
+
+    
+     
+
+a{
+     text-decoration: none;
+     color: black;
+}
 .headnav{
     display: flex;
     align-items: center;
 }
+
 .headnav ul {
     list-style: none;
     font-family: Arial, sans-serif;
     display: flex;
     gap: 25px; 
-
+   
     align-items: center;
     color: gray;
     /* border: 3px solid rgb(131, 100, 227); */ 
 }
-.headnav ul li:hover{
+.GS1:hover{
      color: #3C99DC;
+}
+.GS2{
+    color: white;
 }
 .GS {
     background-color: #3C99DC;
@@ -110,6 +125,7 @@
 .p1des1 h1{
     /* font-size: 48px; */
     font-size: 3.2rem;
+    animation: grow 0.5s ti delay iteration-count direction fill-mode;
 }
 .p1des{
      flex-wrap: wrap;
@@ -161,7 +177,13 @@ button:hover{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 15vh;
+    width: 99%;
+    height: 23vh;
+    margin: 10px;
+    /* border: 2px solid red; */
+    flex-wrap: wrap;
+    /* height: 80%; */
+    /* border: 2px solid blue; */
 
  }
  .proparent{
@@ -204,7 +226,7 @@ button:hover{
     flex-wrap: wrap;
     /* height: 80%; */
     /* border: 2px solid blue; */
-    width: 100%;
+    width: 99%;
     height: 20vh;
  }
 
@@ -212,10 +234,11 @@ button:hover{
 .serivices-head h2,.about-head h2,.products-head h2,.contact-head h2{
     /* , */
     
-      font-size:32px;
+      font-size:28px;
          line-height: 30px;
     font-weight: bold;
     text-align: center;
+    /* display: flex; */
     /* align-items: center; */
       font-family: sans-serif;
        /* border: 2px solid salmon; */
@@ -224,8 +247,15 @@ button:hover{
     font-family: "Open Sans", sans-serif;
     color: #737070;
     text-align: center;
+
     font-size: 17px;
     /* border: 2px solid salmon; */
+}
+.products-head{
+    line-height: 25px;
+}
+.serivices-head{
+     line-height: 25px;
 }
 /* .serivices-head  h2::before {
    display: inline;
@@ -265,7 +295,7 @@ button:hover{
     /* border: 1px solid rgb(0, 0, 0); */
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 99%;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
@@ -385,6 +415,7 @@ button:hover{
 
     .pro-body{
     width: 98%;
+     /* border: 1px solid red; */
     }
  .pro-bod2{
     flex-wrap: wrap;
@@ -489,7 +520,7 @@ button:hover{
     text-align: center;
 }
 .ab-body{
-    width: 98.8;
+    width: 99%;
     display: flex;
     justify-content: center;
     gap: 30px;
@@ -523,12 +554,13 @@ button:hover{
     border-radius: 5px;
 }
 .ab-body2{
-    width: 98vw;
+    width: 99%;
     display: flex;
     flex-wrap: wrap;
 
     justify-content: center;
-    /* border: 3px solid rgb(235, 114, 8); */
+    /* border: 3px solid rgb(53, 8, 235); */
+    overflow-x: hidden;
 }
 /* .cupim{
     border: 2px solid saddlebrown;
@@ -626,7 +658,7 @@ span{
     justify-content: center;
     align-items:center ; */
      height: 15vh;
-    
+    /* border: 2px solid rgb(185, 196, 31); */
 }
 .contact-head h2{
       font-size:32px;
@@ -645,6 +677,7 @@ span{
     gap: 30px;
    
     font-family: sans-serif; 
+     /* border: 1px solid red; */
 }
 .conbod1{
     display: flex;
@@ -654,6 +687,7 @@ span{
     width: 45%;
     /* border: 2px solid rgb(82, 44, 7); */
     gap: 20px;
+    overflow-x: hidden;
 }
 .c1{
     /* border: 2px solid rgb(12, 4, 172); */
@@ -667,10 +701,16 @@ span{
     margin-top: 5px;
   
 }
+.c2{
+    /* border: 1px solid red; */
+    width: 99%;
+    /* overflow-x: hidden; */
+}
 .c2 p{
     /* margin-top: 20px; */
     width: 100%;
     box-sizing: border-box;
+    /* overflow-x: hidden; */
 }
 .c2{
     /* border: 2px solid green; */
@@ -681,7 +721,10 @@ span{
       flex-direction: column;
 }
 
-.c3{
+form input{
+    border-radius: 1%;
+}
+.c3 {
     /* border: 2px solid rgb(224, 218, 35); */
     width: 27%;
      flex-wrap: wrap;
@@ -689,16 +732,31 @@ span{
       flex-direction: column;
       gap: 10px;
 }
-[type="Message"]{
-    height: 25%;
-        align-items: center;
+form{
     display: flex;
+    flex-direction: column;
+    width: 100%;
+    /* flex-wrap: wrap; */
+    gap: 10px;
+}
+
+[type="Message"]{
+    height: 60%;
+    align-items: center;
     padding-left: 5px;
+    border-radius: 1%;
     font-size: 16px;
+    flex-direction: column;
+    display: flex;
+    /* flex-wrap: wrap; */
     font-weight: none;
 }
-input{
-    height: 10%;
+ form input{
+    height: 8vh;
+}
+input:hover{
+    border: none;
+    border:2px solid #3498db;
 }
 
 input::placeholder{
@@ -714,6 +772,9 @@ input::placeholder{
     font-size: 16px;
     font-weight: none;
 } */
+ /* .c2 i{
+    overflow-x: hidden;
+ } */
 
 .c1 i{
     box-sizing: border-box;
@@ -877,7 +938,16 @@ input::placeholder{
         width: 73vw;
     }
 }
+@media (max-width:205px){
+    .c3 button{
+        width: 100%;
+    }
+ 
+}
  @media(max-width:1100px){
+    body{
+        overflow-x: hidden;
+    }
 
     .headnav ul{
         display: none;
@@ -887,7 +957,10 @@ input::placeholder{
     }
     .c2{
         line-height: 40px;
+        /* border: 2px solid red; */
+       
     }
+   
     .conbod1{
         width: 90%;
         display: flex;
@@ -898,14 +971,22 @@ input::placeholder{
         width: 98%;
         flex-direction: column;
         display: flex;
+
          height: auto;
+         /* border: 2px solid red; */
         align-items: center;
         justify-content: center;
     }
     .c3{
         /* justify-content: center; */
-        width: 80%;
+        width: 90%;
+        box-sizing: border-box;
         height: 50vh;
+        
+    }
+    .c3 input,textarea{
+        width: 100%;
+        
     }
   
 }
@@ -915,7 +996,6 @@ input::placeholder{
     }
     .c1,.c2{
         width: 100%;
-      
     }
     .page1{
         /* border: 2px solid red; */
@@ -925,6 +1005,8 @@ input::placeholder{
     /* font-size: 48px; */
     font-size: 28px;
     }
+
+  
     .p1des1 p{
         font-size: 18px;
         display: block;
@@ -941,6 +1023,11 @@ input::placeholder{
            /* justify-content: center;
         align-items: center; */
         width: 90%;
+        /* border: 2px solid red; */
+        /* min-width: 150px; */
+    }
+    .p1des1 button{
+        width: 120px;
     }
     /* .img2 img{
         border: 2px solid red;
@@ -952,7 +1039,7 @@ input::placeholder{
 @media(max-width:780px){
     .pro-bod1,.pro-bod2{
         flex-direction: column;
-        padding: 20px;
+        padding: 15px;
     }
     .pd,.pd2,.pd3,.pd4{
         width: 100%;
@@ -975,7 +1062,8 @@ input::placeholder{
 
     }
     .p1des,.img2{
-        width: 100%;
+        width: 90%;
+        /* border: 2px solid red; */
         /* text-align: start; */
     }
     .img2 img{
@@ -991,6 +1079,7 @@ input::placeholder{
         justify-content: center;
         align-items: center;
     }
+ 
 }
 
     /* .page1{
@@ -1027,4 +1116,3 @@ input::placeholder{
     }
 
  }  */
-
